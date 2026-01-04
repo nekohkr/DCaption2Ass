@@ -1366,12 +1366,14 @@ BOOL CARIB8CharDecode::AddToString(const char *cDec, BOOL m_bGaiji)
             }
         }
     } else {
+        /*
         if (m_wTmpPosX > (m_wMaxPosX - m_wTmpCharW)) {
             CheckModify();
             m_wPosX = 0;
             m_wPosY += (m_wCharH + m_wCharVInterval);
             m_wTmpPosX = m_wClientX;
         }
+        */
         m_strDecode += cTmpDec;
         m_wTmpPosX += m_wTmpCharW;
     }
