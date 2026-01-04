@@ -115,10 +115,12 @@ DWORD CCaptionMain::AddTSPacket(BYTE *pbPacket)
             else
                 m_iLastCounter = (int)ph.Counter;
         } else {
+            /*
             if (ph.Counter != m_iLastCounter + 1)
                 Clear();
             else
-                m_iLastCounter = (int)ph.Counter;
+            */
+            m_iLastCounter = (int)ph.Counter;
         }
     }
 
